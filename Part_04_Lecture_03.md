@@ -1,10 +1,3 @@
-No problem at all! Let's get Hour 3 properly formatted into the exact same Markdown presentation style so your whole curriculum matches perfectly.
-
-Here is the presentation for **Hour 3: Operators & Logic** in the standard Markdown format.
-
----
-
-```markdown
 # Hour 3: Operators & Simple Logic
 
 **Making Your Code Calculate, Compare, and Think**
@@ -274,4 +267,3 @@ We will cover:
 *   `if`, `else if`, and `else` statements.
 *   Bringing our logic back into the browser for a "Traffic Signal" activity.
 *   Making our programs smart!
-```
