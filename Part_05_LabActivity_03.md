@@ -165,3 +165,116 @@ This requires a little more logic.
 
 ---
 This lab structure effectively balances pure logic practice in a sterile Node.js environment with the excitement of seeing that same logic power an interactive webpage, providing a perfect bridge to the upcoming lessons on DOM manipulation.
+
+---
+You're right, expanding the console section will build a stronger foundation in pure logic before they even touch the DOM activities. A 5-hour lab is quite extensive, so the key is to provide enough content with varying difficulty levels to keep all students engaged, from the slowest to the fastest.
+
+This revised lab structure is designed to be a comprehensive "bootcamp" of the first three hours. It can easily fill 3-5 hours depending on the students' pace and how much time is allocated to the quizzes and challenges.
+
+---
+
+### **Revised & Extended Lab Session: JavaScript Fundamentals Bootcamp**
+
+**Total Estimated Time:** 3 - 5 hours
+**Objective:** This comprehensive lab solidifies your understanding of JavaScript's core foundations. By the end, you will be a confident user of variables, data types, and operators, capable of solving multi-step problems in both Node.js and the browser.
+
+---
+
+### **Part 1: The Basics - Setup & Revision (Estimated Time: 30-45 minutes)**
+
+This section is a warm-up and ensures everyone is on the same page.
+
+#### **Activity 1: Environment Check**
+1.  Create a new folder named `js_bootcamp_lab`. Open it in VS Code.
+2.  **Browser Check:** Create `hello_browser.html`. Inside, use `document.write()` to display your name in an `<h1>` tag and `console.log()` to print your favorite food to the console. Open it in a browser and verify both outputs.
+3.  **Node.js Check:** Create `hello_node.js`. Inside, use `console.log()` to print three lines: your name, your age, and the current year. Run it with `node hello_node.js` and verify the output.
+
+---
+
+### **Part 2: Deep Dive into Node.js Logic (Estimated Time: 1.5 - 2 hours)**
+
+This is the core of the lab, focusing on problem-solving with operators without the distraction of a UI.
+
+#### **Activity 2: Simple Age Calculator**
+1.  Create `age_calculator.js`.
+2.  Define `const birthYear` and `const currentYear`.
+3.  Calculate the `age`.
+4.  **Output:** `If you were born in 1995, you are 29 years old.`
+
+#### **Activity 3: Temperature Converter (Celsius to Fahrenheit)**
+1.  Create `temperature_converter.js`.
+2.  Define `const celsius`.
+3.  Use the formula `F = (C * 9/5) + 32` to calculate `fahrenheit`.
+4.  **Output:** `25°C is equal to 77°F.`
+
+#### **Activity 4: Property Splitter**
+This activity involves multiple steps and is great for practicing variable updates.
+1.  Create `property_splitter.js`.
+2.  Imagine you and a partner sold a house. Define a `const totalValue` (e.g., `500000`).
+3.  There's a `const realtorFeePercentage` of `0.06` (6%).
+4.  First, calculate the `realtorCut` by multiplying `totalValue` by `realtorFeePercentage`.
+5.  Next, calculate the `netValue` which is the `totalValue` minus the `realtorCut`.
+6.  Finally, calculate the `partnerShare`, which is the `netValue` divided by 2.
+7.  **Log each step clearly to the console:**
+    *   **Example Output:**
+        ```
+        Original house value: $500000
+        Realtor's cut: $30000
+        Net value after fees: $470000
+        Each partner's share: $235000
+        ```
+
+#### **Activity 5: The Reading Speed Estimator**
+This activity requires careful unit conversion and breaking down a problem.
+1.  Create `reading_estimator.js`.
+2.  Define a `const wordsInBook` (e.g., `350000`).
+3.  Define a `const wordsPerMinute` (the user's reading speed, e.g., `250`).
+4.  **Step 1:** Calculate the total minutes required to read the book. Store this in `totalMinutes`.
+5.  **Step 2:** Convert `totalMinutes` into hours. Store this in `totalHours`. (Hint: `minutes / 60`).
+6.  **Step 3 (Challenge):** The `totalHours` might be a decimal (e.g., 23.33 hours). Can you split this into full hours and remaining minutes?
+    *   Use `Math.floor(totalHours)` to get the `fullHours`.
+    *   Use the modulo operator (`%`) or subtraction to find the remaining minutes. `remainingMinutes = totalMinutes % 60;`
+7.  **Log the results:**
+    *   **Example Output:**
+        ```
+        The book has 350000 words.
+        With a reading speed of 250 WPM...
+        It will take approximately 23.33 hours to read.
+        More specifically: 23 full hours and 20 minutes.
+        ```
+    *   *(Note: The `toFixed(2)` method can be useful for rounding decimals: `totalHours.toFixed(2)`)*
+
+---
+
+### **Part 3: Interactive Browser Applications (Estimated Time: 1 - 1.5 hours)**
+
+This section previews the power of connecting your JS logic to a user interface. Use the provided starter code for each.
+
+#### **Activity 6: Currency Converter (USD to EUR)**
+*   (Use the starter code provided in the previous response).
+*   **Task:** Implement the logic to convert `usdValueString` and `exchangeRateString` to numbers, calculate the `eurValue`, and see it appear on the webpage.
+
+#### **Activity 7: Tip Calculator**
+*   (Use the starter code provided in the previous response).
+*   **Task:** Implement the logic to calculate the `tipAmount` and `totalBill` based on the bill and tip percentage from the HTML, and display both results on the page.
+
+---
+
+### **Part 4: Quiz & Final Challenges (Estimated Time: 30-45 minutes)**
+
+This section tests conceptual understanding and pushes faster students.
+
+#### **Activity 8: Concept Quiz**
+*   (Use the quiz provided in the previous response: Multiple Choice, "What's the Output?", and "Find the Bug"). This is a great way to break up the coding and reinforce the "why".
+
+#### **Activity 9: Final Challenge (Node.js) - The BMI Calculator**
+1.  Create `bmi_calculator.js`.
+2.  The formula for BMI is `weight (kg) / (height (m)²)`.
+3.  Define `const weightInKg` (e.g., `70`).
+4.  Define `const heightInCm` (e.g., `175`).
+5.  **Your Task:**
+    *   You must first convert `heightInCm` to `heightInM` (Hint: `cm / 100`).
+    *   Then, calculate the BMI using the formula. Remember to square the height in meters (`heightInM ** 2`).
+    *   **Output:** `A person with a weight of 70kg and a height of 1.75m has a BMI of 22.86.`
+
+---
