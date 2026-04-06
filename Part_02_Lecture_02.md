@@ -283,4 +283,4 @@ We've learned how to store data. Next, we'll learn how to **work with it**.
 *   Comparing values with **Comparison Operators** (`>`, `<`, `===`).
 *   Understanding **Type Coercion**.
 *   Building our first **Node.js console application**: a simple calculator.
-```
+
