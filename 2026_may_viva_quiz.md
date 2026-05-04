@@ -1,7 +1,3 @@
-Of course! Here is a 40-question MCQ quiz covering the fundamentals of HTML, CSS, and JavaScript, designed for freshers with about three weeks of training. The quiz is balanced to be completed within 30 minutes.
-
----
-
 ### HTML, CSS & JavaScript Fresher Quiz (30 Minutes)
 
 #### Instructions:
